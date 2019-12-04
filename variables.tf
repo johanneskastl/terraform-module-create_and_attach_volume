@@ -14,3 +14,8 @@ variable "instances_to_attach_to" {
   type        = list
   description = "List of instances to attach the volumes to"
 }
+
+variable "module_depends_on" {
+  description = "Explicit dependency on other resource to allow ordering of volume attachments"
+  default     = []
+}
